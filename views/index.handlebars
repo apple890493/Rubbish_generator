@@ -1,0 +1,65 @@
+<div class="container py-5">
+
+  <div class="row">
+    <div class="col-12 col-lg-10 col-xl-8 mx-auto">
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Who do you want to tell <i class="fas fa-volume-up"></i></h5>
+          <hr>
+          <form method="POST" action="/">
+            <div class="d-flex justify-content-center mb-4">
+              <div class="col-md-4">
+                <div class="thumbnail text-center">
+                  <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+                    alt="engineer" style="width:100%; height: 150px">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="target" id="engineer" value="engineer"
+                      {{#if_option job 'engineer'}}checked{{/if_option}} checked="true" />
+                    <label class="form-check-label" for="inlineRadio1">工程師</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail text-center">
+                  <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+                    alt="designer" style="width:100%; height: 150px">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="target" id="designer" value="designer"
+                      {{#if_option job 'designer'}}checked{{/if_option}} />
+                    <label class="form-check-label" for="inlineRadio2">設計師</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail text-center">
+                  <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+                    alt="entrepreneur" style="width:100%; height: 150px">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="target" id="entrepreneur" value="entrepreneur"
+                      {{#if_option job 'entrepreneur'}}checked{{/if_option}} />
+                    <label class="form-check-label" for="inlineRadio3">創業家</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex ">
+              <div class="col-4">
+                <button class="btn btn-info" type="submit">Start</button>
+              </div>
+
+              <div class="col-8 ">
+                <textarea class="form-control" id="message-text">{{#if rubbish}}身為一個{{rubbish}}吧!{{/if}}
+                </textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <small class="card-footer text-muted text-right">
+          Idea is inspired by <a href="https://passwordsgenerator.net/" target="_blank">Alpha Camp</a>
+        </small>
+      </div>
+    </div>
+  </div>
+</div>
