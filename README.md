@@ -1,6 +1,8 @@
 # 幹話產生器
 以Express & Node.js打造的小程式,提供用戶紓壓
 
+![image](https://github.com/apple890493/rubbish_generator/blob/master/2_3A5.JPG)
+
 ## 功能列表
 - 使用者可以在工程師、設計師、或創業家中選擇一個對象（三選一)
 - 使用者按下【產生幹話】後，旁邊的 textbox 就會出現一句幹話
